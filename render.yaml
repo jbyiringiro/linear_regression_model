@@ -6,7 +6,7 @@ services:
     plan: free
     repo: jbyiringiro/linear_regression_model
     branch: main
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install -r summative/API/requirements.txt"
     startCommand: "gunicorn -k uvicorn.workers.UvicornWorker prediction:app --chdir summative/API --bind 0.0.0.0:$PORT"
     envVars:
       - key: PYTHON_VERSION
