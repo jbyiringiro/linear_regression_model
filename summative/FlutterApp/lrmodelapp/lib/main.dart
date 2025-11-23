@@ -71,20 +71,19 @@ class _PredictPageState extends State<PredictPage> {
   String get apiUrl {
     // If you're running web, you can't use 10.0.2.2; use a host reachable by the browser or a deployed URL
     if (kIsWeb) {
-      return "http://127.0.0.1:8000/predict"; // usually works for web localhost testing only
+      return "https://linear-regression-model-onnj.onrender.com/predict"; // public deployed URL
     }
     // On mobile emulator:
     if (Platform.isAndroid) {
       // Android emulator -> 10.0.2.2 maps to host machine
-      return "http://10.0.2.2:8000/predict";
+      return "https://linear-regression-model-onnj.onrender.com/predict";
     } else if (Platform.isIOS) {
-      return "http://127.0.0.1:8000/predict";
+      return "https://linear-regression-model-onnj.onrender.com/predict";
     } else {
       // fallback for desktop
-      return "http://127.0.0.1:8000/predict";
+      return "https://linear-regression-model-onnj.onrender.com/predict";
     }
   }
-  // ---------------------------------------------
 
   final List<Map<String, dynamic>> terrainOptions = [
     {'v': 1.0, 'label': '1.0 — Smooth (indoor: tiles, halls)'},
