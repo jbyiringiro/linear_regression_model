@@ -1,16 +1,6 @@
-# lrmodelapp
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Install Flutter SDK and set up emulator or physical device.
+2. In terminal: cd summative/FlutterApp/lrmodelapp
+3. Run: flutter pub get
+4. Edit lib/main.dart and set apiUrl = "https://<your-deployed-app>/predict"
+5. Run: flutter run
+6. Use numeric keyboard, fill all fields, press Predict.
