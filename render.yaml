@@ -7,7 +7,7 @@ services:
     repo: jbyiringiro/linear_regression_model
     branch: main
     buildCommand: "pip install -r summative/API/requirements.txt"
-    startCommand: "gunicorn -k uvicorn.workers.UvicornWorker prediction:app --bind 0.0.0.0:$PORT"
+    startCommand: gunicorn -k uvicorn.workers.UvicornWorker prediction:app --bind 0.0.0.0:$PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.4
